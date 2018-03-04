@@ -52,6 +52,7 @@ class BookController extends Controller
                 'book_borrowed' => 0
             
             ]);
+            $request->session()->flash('message', 'Book Successfully Added!');
             return redirect('books');
 
         }else{
@@ -95,7 +96,7 @@ class BookController extends Controller
             $book->book_section = $request->b_sect;
 
             $book->save();
-            $request->session()->flash('message', 'Successfully modified the Book!');
+            $request->session()->flash('message', 'Book Successfully modified!');
             return redirect('books');
         }else{
             return redirect('login');
@@ -106,7 +107,7 @@ class BookController extends Controller
     {
         if(Auth::user()){
             $book->delete();
-            $request->session()->flash('message', 'Successfully deleted the task!');
+            $request->session()->flash('message', 'Book Successfully deleted!');
             return redirect('books');
         }else{
             return redirect('login');
@@ -138,7 +139,7 @@ class BookController extends Controller
              ->where('id', $id)
              ->update(['book_borrowed' => 1,'book_borrowed_by' => $request->b_bby,'book_borrowed_date' => $request->b_bdate]);
 
-             $request->session()->flash('message', 'Successfully Borrowed the Book!');
+             $request->session()->flash('message', 'Book Successfully Borrowed!');
             return redirect('books');
         }else{
             return redirect('login');
@@ -157,7 +158,7 @@ class BookController extends Controller
              ->where('id', $id)
              ->update(['book_borrowed' => 0,'book_returned_date' => $request->b_rdate]);
 
-             $request->session()->flash('message', 'Successfully Returned the Book!');
+             $request->session()->flash('message', 'Book Successfully Returned!');
              return redirect('books');
         }else{
             return redirect('login');
