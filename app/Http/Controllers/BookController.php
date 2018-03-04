@@ -52,6 +52,7 @@ class BookController extends Controller
                 'book_borrowed' => 0
             
             ]);
+            $request->session()->flash('message', 'Book Successfully Added!');
             return redirect('books');
 
         }else{
@@ -95,7 +96,7 @@ class BookController extends Controller
             $book->book_section = $request->b_sect;
 
             $book->save();
-            $request->session()->flash('message', 'Successfully modified the Book!');
+            $request->session()->flash('message', 'Book Successfully modified!');
             return redirect('books');
         }else{
             return redirect('login');
@@ -106,7 +107,7 @@ class BookController extends Controller
     {
         if(Auth::user()){
             $book->delete();
-            $request->session()->flash('message', 'Successfully deleted the task!');
+            $request->session()->flash('message', 'Book Successfully deleted!');
             return redirect('books');
         }else{
             return redirect('login');
