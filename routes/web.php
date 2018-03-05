@@ -13,16 +13,23 @@
 
 use App\Books;
 
-
-Route::get('books/{id}/borrowed', 'BookController@borrowed');
-Route::put('books/borrow/{id}', 'BookController@borrowed_update');
-Route::put('books/breturn/{id}', 'BookController@borrowed_return');
-Route::resource('books', 'BookController');
-
-
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('books/{id}/borrowed', 'BookController@borrowed');
+
+Route::put('books/borrow/{id}', 'BookController@borrowed_update');
+Route::get('books/borrow/{id}', 'BookController@booksinvalget');
+
+Route::put('books/breturn/{id}', 'BookController@borrowed_return');
+Route::get('books/breturn/{id}', 'BookController@booksinvalget');
+
+Route::resource('books', 'BookController');
+
+
+
+
 
 
 //Route::get('/', 'ListController@show');

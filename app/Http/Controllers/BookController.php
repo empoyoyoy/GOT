@@ -119,8 +119,6 @@ class BookController extends Controller
         if(Auth::user()){
             $book = DB::table('books')->where('id', '=', $id)->get();
             return view('books.borrowed',compact('book',$book));
-           //var_dump($book);
-           //echo $books;
         }else{
             return redirect('login');
         }     
@@ -129,6 +127,7 @@ class BookController extends Controller
     
     public function borrowed_update(Request $request,$id,Books $book)
     {
+        
         if(Auth::user()){    
             $request->validate([
                 'b_bby' => 'required',
@@ -164,5 +163,14 @@ class BookController extends Controller
             return redirect('login');
         }  
     }
+
+    public function booksinvalget(){
+        if(Auth::user()){    
+             return redirect('books');
+        }else{
+            return redirect('login');
+        }  
+    }
+
 
 }
