@@ -105,6 +105,12 @@
                                 </tr>
                                 </thead>
                                 <tbody  id="tabid">
+								@if (count($books)<1) 
+                                <tr >
+                                <td colspan="5">No available books</td>
+                                
+                                <td>
+                                @endif
                                 @foreach($books as $book)
                                 <tr>
                                 <td><a href="/books/{{$book->id}}">{{$book->book_title}}</a></td>

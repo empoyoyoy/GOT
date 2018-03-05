@@ -33,7 +33,11 @@ class CreateUsersTable extends Migration
                 'remember_token'  => NULL, 
                 'created_at'  => NULL,
                 'updated_at'  => NULL
-            ),
+            )
+            
+        );
+
+        DB::table('users')->insert(
             array(
                 'id'  => 2,
                 'name'  => 'bookworm' , 
@@ -46,7 +50,8 @@ class CreateUsersTable extends Migration
             )
         );
 
-        DB::statement("ALTER TABLE books AUTO_INCREMENT = 3;");
+
+        DB::statement("ALTER TABLE users AUTO_INCREMENT = 3;");
     }
 
     /**
