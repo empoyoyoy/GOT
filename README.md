@@ -29,13 +29,7 @@ Bookworm <br />
 User Name: bookworm@riolibrary.com <br />
 Password : 1234567 <br />
 
-This project is using jquery the author did not include jquery .js in the project environment the author only include the link to the updated jquery file https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+This project is using jquery the author did not include jquery .js in the project environment; thus author only included a link to the updated jquery file https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
 
 
-## Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
