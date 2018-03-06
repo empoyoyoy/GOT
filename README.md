@@ -1,7 +1,7 @@
 ## Synopsis
-This Project is called Rio's Library this project is enabled for cataloging books into the library; 
-In this Project A User can register for its User account; User Account is defined as a Librarian and a Bookworm
-A Librarian can add/edit/update return and borrow books. 
+This Project is called Rio's Library this project is enabled for cataloging books into the library; <br />
+In this Project A User can register for its User account; User Account is defined as a Librarian and a Bookworm <br />
+A Librarian can add/edit/update return and borrow books. <br />
 A Bookworm can borrow books and cannot see borrowed books from the book list
 
 ## Motivation
@@ -9,27 +9,25 @@ A Bookworm can borrow books and cannot see borrowed books from the book list
 
 ## Installation
 
-Run to cmd : git clone https://github.com/empoyoyoy/GOT.git localdestination
+Run to cmd : git clone https://github.com/empoyoyoy/GOT.git localdestination <br />
+Go to cloned directory ex. cd localdestination <br />
+Run to cmd : composer install <br />
+Create Database for Database  migration <br />
+Rename .env.example to .env in under localdestination folder <br />
+Update Database connections in .env file (Database name, username, password) <br />
+Run to cmd : php artisan key:generate <br />
+Run to cmd : php artisan migrate <br />
+Run to cmd : php artisan serve <br />
 
-Go to cloned directory ex. cd localdestination
-Run to cmd : composer install
-Create Database for Database  migration
-Rename .env.example to .env in under localdestination folder
-Update Database connections in .env file (Database name, username, password)
-Run to cmd : php artisan key:generate
-Run to cmd : php artisan migrate
-Run to cmd : php artisan serve
+Access localhost URL: for my case its http://127.0.0.1:8000/ <br />
+Default user is being set up upon migrating the database  <br />
+Librarian <br />
+User Name: librarian@riolibrary.com <br />
+Password : 1234567 <br />
 
-Access localhost URL: for my case its http://127.0.0.1:8000/
-
-Default user is being set up 
-Librarian
-User Name: librarian@riolibrary.com
-Password : 1234567
-
-Bookworm
-User Name: bookworm@riolibrary.com
-Password : 1234567
+Bookworm <br />
+User Name: bookworm@riolibrary.com <br />
+Password : 1234567 <br />
 
 ## Contributors
 
