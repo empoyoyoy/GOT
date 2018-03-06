@@ -9,10 +9,10 @@ Bookworm users cannot see borrowed books from the book list while Librarians can
 ## Installation
 <ul>
 <li> Run to cmd : git clone https://github.com/empoyoyoy/GOT.git localdestination </li>
-<li> Go to cloned directory ex.  Run to cmd : cd localdestination </li>
+<li> Go to created cloned directory ex.  Run to cmd : cd localdestination </li>
 <li> Run to cmd : composer install </li>
-<li> Setup Database (mysql) for Database  migration </li>
-<li> Rename .env.example to .env in under localdestination folder </li>
+<li> Setup and create Database (mysql) for Database  migration </li>
+<li> Rename .env.example to .env under localdestination folder </li>
 <li> Update Database connections in .env file (Database name, username, password) </li>
 <li> Run to cmd : php artisan key:generate </li>
 <li> Run to cmd : php artisan migrate </li>
@@ -20,7 +20,7 @@ Bookworm users cannot see borrowed books from the book list while Librarians can
 <li> Access localhost URL: for my case its http://127.0.0.1:8000/ </li>
 </ul>
 </br>
-Default user is being set up upon migrating the database  
+Default user is being set up upon migrating the database (Users can also create his/her own account) 
 Librarian <br />
 User Name: librarian@riolibrary.com <br />
 Password : 1234567 <br />
