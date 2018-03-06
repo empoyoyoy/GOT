@@ -10,9 +10,9 @@ A Bookworm can borrow books and cannot see borrowed books from the book list
 ## Installation
 
 Run to cmd : git clone https://github.com/empoyoyoy/GOT.git localdestination <br />
-Go to cloned directory ex. cd localdestination <br />
+Go to cloned directory ex.  Run to cmd : cd localdestination <br />
 Run to cmd : composer install <br />
-Create Database for Database  migration <br />
+Setup Database  for Database  migration <br />
 Rename .env.example to .env in under localdestination folder <br />
 Update Database connections in .env file (Database name, username, password) <br />
 Run to cmd : php artisan key:generate <br />
