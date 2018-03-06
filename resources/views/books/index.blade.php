@@ -84,16 +84,7 @@
                                         <div class="col-md-9">
                                             <input type="text" class="form-control" id="searchbook" placeholder="Search for title,genre or section">
                                         </div>
-                                        <div class="col-md-1">
-                                            
-                                                <a href="/books/create">
-                                                <button class="btn btn-main">
-                                                Add Book
-                                                </button>
-                                                </a>
-                                            
-                                            
-                                        </div>
+                                        
 
                                     </div>
                                 </div>
