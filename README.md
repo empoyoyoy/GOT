@@ -1,8 +1,9 @@
 ## Synopsis
 This Project is called Rio's Library this project is enabled for cataloging books into the library; <br />
 In this Project A User can register for its User account; User Account is defined as a Librarian and a Bookworm <br />
-A Librarian can add/edit/update return and borrow books. <br />
-A Bookworm can borrow books and cannot see borrowed books from the book list
+A Librarian can add/edit/update, filter books by title,author,genre and library section, return and borrow books. <br />
+A Bookworm can borrow books, filter books by title,author,genre and library section; <br />
+Bookworm users cannot see borrowed books from the book list
 
 ## Motivation
 
