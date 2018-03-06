@@ -29,6 +29,8 @@ Bookworm <br />
 User Name: bookworm@riolibrary.com <br />
 Password : 1234567 <br />
 
+This project is using jquery the author did not include jquery .js in the project environment the author only include the link to the updated jquery file https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+
 
 ## Contributors
 
