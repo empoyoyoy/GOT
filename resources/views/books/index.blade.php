@@ -42,7 +42,10 @@
                                 <tbody  id="tabid">
                                 @foreach($books as $book)
                                 <tr >
-                                <td><a href="/books/{{$book->id}}">{{$book->book_title}}</a></td>
+                                <td>
+                                <a href="/books/{{$book->id}}">{{$book->book_title}}</a><br>
+                                @if ($book->book_borrowed == 1)<mark><font color="red">BOOK BORROWED</font></mark> @endif 
+                                </td>
                                 <td>{{$book->book_auth}}</td>
                                 <td>{{$book->book_genre}}</td>
                                 <td>{{$book->book_section}}</td>
